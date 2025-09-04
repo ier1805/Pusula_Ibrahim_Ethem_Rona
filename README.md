@@ -31,8 +31,7 @@ Sonuçta, **RidgeCV** tabanlı bir pipeline ile **RMSE ≈ 3.04**, **MAE ≈ 1.6
 
 ### 3) Kodlama
 - **`Uyruk`** ve **`KanGrubu`**: **One-Hot Encoding** (0/1 dummy sütunlar).  
-- **`Cinsiyet`**: Başlangıçta 0/1/2 gibi **ordinal** kodlama denense de, **Ridge** için sıralı yanlılığı önlemek adına **One‑Hot** yaklaşımı tercih edilmiştir.  
-- `OneHotEncoder(handle_unknown="ignore")` kullanılarak train/test kolonu hizası garanti edilmiştir.
+- **`Cinsiyet`**: **Label Encoding**
 
 ### 4) Ölçekleme (Tek Kez ve Kontrollü)
 - **Binary (0/1) dummy sütunlar ölçeklenmemiştir** (Ridge’de ceza dengesini bozabilir).
